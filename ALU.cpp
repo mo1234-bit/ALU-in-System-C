@@ -17,9 +17,8 @@ enum Op : sc_uint<5> {
   OP_SLTU = 9,   
 };
 
-// ---------- ALU Module ----------
 SC_MODULE(ALU) {
-  // Ports
+
   sc_in<sc_uint<W>>  a{"a"};
   sc_in<sc_uint<W>>  b{"b"};
   sc_in<sc_uint<5>>  op{"op"};
@@ -91,3 +90,4 @@ SC_MODULE(ALU) {
     dont_initialize();
   }
 };
+
